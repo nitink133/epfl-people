@@ -39,7 +39,7 @@ object PeopleDataParser {
             for (j in 0 until contact.size) {
                 if (j == 0)
                     user.email = StringUtils.convertToEmail(contact[j].attr("href")) ?: ""
-                else user.contact = contact[j].attr("href")
+                else user.contact = contact[j].attr("href").removePrefix("tel:")
             }
 
             peoples.add(user)

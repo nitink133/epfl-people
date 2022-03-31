@@ -8,14 +8,17 @@ import ch.epfl.people.network.base.model.Error
 import ch.epfl.people.network.base.model.Response
 import ch.epfl.people.network.people.model.People
 import ch.epfl.people.parser.PeopleDataParser
+import ch.epfl.people.utils.functional.LogUtils
 import co.allcommerce.myservice.di.IoDispatcher
 import co.allcommerce.myservice.di.MainDispatcher
+import com.google.gson.Gson
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.android.scopes.ViewModelScoped
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 import org.jsoup.Jsoup
+import java.lang.Exception
 import javax.inject.Inject
 
 @ViewModelScoped
@@ -39,13 +42,17 @@ class EpflNetwork @Inject constructor(
         }
 
         return withContext(ioDispatcher) {
-            val users = arrayListOf<People>()
-            val peoplesList = PeopleDataParser.parseJsoupDocumentToPeoplesList(
-                Jsoup.connect("https://www.epfl.ch/labs/chili/people/").get()
-            )
+            try {
+                val peoplesList = PeopleDataParser.parseJsoupDocumentToPeoplesList(
+                    Jsoup.connect("https://www.epfl.ch/labs/chili/people/").get()
+                )
 
-            if (peoplesList.isNullOrEmpty()) Response.IsEmpty
-            else Response.Success(users);
+                if (peoplesList.isNullOrEmpty()) Response.IsEmpty
+                else Response.Success(peoplesList)
+            }catch (e:Exception){
+                Response.Error(Error(message = e.message))
+            }
+
         }
     }
 

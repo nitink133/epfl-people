@@ -19,7 +19,7 @@ class PeopleListViewModel @Inject constructor(
         MutableStateFlow(Response.Initial)
     val responseStateForPeoplesList: StateFlow<Response<List<People>>> = _responseStateForPeoplesList
 
-    private fun getPeoples() {
+     fun getPeoples() {
         viewModelScope.launch {
             _responseStateForPeoplesList.value = Response.Loading
             val response = epflRepository.getPeoples()

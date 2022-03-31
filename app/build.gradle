@@ -78,7 +78,7 @@ dependencies {
 
     //Dagger
     implementation "com.google.dagger:hilt-android:$rootProject.dagger_version"
-    annotationProcessor "com.google.dagger:hilt-compiler:$rootProject.dagger_version"
+    kapt "com.google.dagger:hilt-compiler:$rootProject.dagger_version"
 
     //Browser
     implementation "androidx.browser:browser:$rootProject.browser_version"

@@ -18,7 +18,6 @@ import ch.epfl.people.utils.functional.AnimationUtils
 import ch.epfl.people.utils.functional.ToastUtils
 import co.allcommerce.myservice.base.fragment.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
@@ -46,6 +45,7 @@ class PeopleListFragment : BaseFragment() {
     }
 
     override fun hideProgress() {
+        binding.swipeRefresh.isRefreshing = false
         AnimationUtils.showView(binding.swipeRefresh)
         AnimationUtils.hideView(binding.layoutProgressBar.progressBar)
     }
@@ -97,6 +97,10 @@ class PeopleListFragment : BaseFragment() {
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = mAdapter
+        }
+
+        binding.swipeRefresh.setOnRefreshListener {
+            viewModel.getPeoples()
         }
     }
 

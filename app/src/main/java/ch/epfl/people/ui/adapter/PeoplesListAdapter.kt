@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import ch.epfl.people.databinding.ItemPeopleBinding
 import ch.epfl.people.extension.makeVisible
+import ch.epfl.people.extension.setUnderLineText
 import ch.epfl.people.network.people.model.People
 import coil.load
 
@@ -29,10 +30,10 @@ class PeoplesListAdapter(
             tvName.text = item.name
             tvName.makeVisible(!item.name.isNullOrEmpty())
 
-            tvEmail.text = item.email
+            tvEmail.setUnderLineText(item.email)
             tvEmail.makeVisible(!item.email.isNullOrEmpty())
 
-            tvContactNumber.text = item.contact
+            tvContactNumber.setUnderLineText(item.contact)
             tvContactNumber.makeVisible(!item.contact.isNullOrEmpty())
 
             ivImage.load(item.image)

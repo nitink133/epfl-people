@@ -41,7 +41,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_extra_small"
-                android:text="@string/dummy_small_text" />
+                android:text="@string/dummy_small_text"
+                android:textColor="@color/colorPrimary" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_contact_number"
