@@ -12,4 +12,8 @@ class EpflRepository @Inject constructor(private val epflNetwork: EpflNetwork) {
     suspend fun getPeoples(): Response<List<People>> {
         return epflNetwork.getPeoples()
     }
+
+    suspend fun getPeopleInfo(id:String): Response<People> {
+        return epflNetwork.getPeopleInfo(id)
+    }
 }

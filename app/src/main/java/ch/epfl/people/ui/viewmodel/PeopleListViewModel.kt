@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import ch.epfl.people.network.base.model.Response
 import ch.epfl.people.network.people.model.People
 import ch.epfl.people.repository.EpflRepository
+import ch.epfl.people.utils.functional.LogUtils
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -24,6 +25,14 @@ class PeopleListViewModel @Inject constructor(
             _responseStateForPeoplesList.value = Response.Loading
             val response = epflRepository.getPeoples()
             _responseStateForPeoplesList.value = response
+        }
+    }
+
+    fun getPeopleInfo(id:String) {
+        viewModelScope.launch {
+            _responseStateForPeoplesList.value = Response.Loading
+            val response = epflRepository.getPeopleInfo(id)
+            _responseStateForPeoplesList.value = Response.Initial
         }
     }
 

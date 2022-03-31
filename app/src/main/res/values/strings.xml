@@ -5,4 +5,15 @@
 
     <string name="title_people_list">People List</string>
     <string name="title_personal_info">Personal Info</string>
+    <string name="lbl_position_with_colon">Position: </string>
+    <string name="lbl_office_with_colon">Office: </string>
+
+    <string name="lbl_email">Email</string>
+    <string name="lbl_biography">Biography</string>
+    <string name="lbl_citizenship">Citizenship</string>
+    <string name="lbl_contact_number">Contact Number</string>
+    <string name="lbl_position">Position</string>
+    <string name="lbl_mission">Mission</string>
+    <string name="lbl_field_of_expertise">Field of Expertise</string>
+
 </resources>

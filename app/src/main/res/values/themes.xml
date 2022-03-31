@@ -25,9 +25,6 @@
         <item name="android:statusBarColor">@color/colorPrimary</item>
         <item name="android:actionBarStyle">@style/BaseTheme.ActionBar</item>
 
-        <item name="errorTextColor">@color/colorError</item>
-        <item name="android:colorError">@color/colorError</item>
-        <item name="android:actionMenuTextColor">@color/white</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">

@@ -8,6 +8,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import ch.epfl.people.databinding.FragmentPeopleListBinding
 import ch.epfl.people.network.base.model.Response
@@ -34,8 +35,15 @@ class PeopleListFragment : BaseFragment() {
         PeoplesListAdapter(arrayListOf(), mAdapterCallbacks)
     }
 
-    private val mAdapterCallbacks: ((position: Int) -> Unit) = {
+    private val mAdapterCallbacks: ((position: Int) -> Unit) = let@{
         //ignore
+        val names = mAdapter.items[it].name?.split(" ")
+        val requestId: StringBuilder = StringBuilder()
+        if (names.isNullOrEmpty()) return@let
+        requestId.append(names.first())
+        requestId.append(".")
+        requestId.append(names.last())
+        findNavController().navigate(PeopleListFragmentDirections.moveToBookingDetails(requestId.toString()))
     }
 
 

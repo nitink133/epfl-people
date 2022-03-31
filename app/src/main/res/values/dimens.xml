@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <dimen name="text_size_ultra_small">8sp</dimen>
     <dimen name="text_size_extra_small">10sp</dimen>
     <dimen name="text_size_small">12sp</dimen>
@@ -25,9 +24,6 @@
     <dimen name="margin_extra_large">22dp</dimen>
     <dimen name="margin_ultra_large">30dp</dimen>
     <dimen name="margin_extreme_large">60dp</dimen>
-    <dimen name="margin_bottom_cta">24dp</dimen>
-    <dimen name="margin_top_mandatory_cta_to_body">6dp</dimen>
-    <dimen name="view_size_home_booking_date_box">48dp</dimen>
 
     <dimen name="zero">0dp</dimen>
 
@@ -39,64 +35,6 @@
     <dimen name="radius_ultra_large">22dp</dimen>
     <dimen name="radius_extreme_large">44dp</dimen>
 
-    <dimen name="min_button_height">48dp</dimen>
-    <dimen name="min_small_button_height">40dp</dimen>
-    <dimen name="min_extra_small_button_height">32dp</dimen>
-    <dimen name="min_ultra_small_button_height">24dp</dimen>
-    <dimen name="stroke_edittext">1dp</dimen>
-    <dimen name="stroke_text_input">1.2dp</dimen>
-    <dimen name="stroke_drawable">1dp</dimen>
-    <dimen name="stroke_drawable_medium">2dp</dimen>
-    <dimen name="stroke_drawable_large">4dp</dimen>
-
-    <dimen name="margin_top_onboarding_setup">80dp</dimen>
-    <dimen name="height_toolbar_onboarding_setup">200dp</dimen>
-    <dimen name="margin_toolbar_title_and_subheading_onboarding_setup">60dp</dimen>
-    <dimen name="margin_top_logout_and_rating_view_in_more_settings">50dp</dimen>
-
-    <dimen name="min_height_width_language_box">40dp</dimen>
-    <dimen name="min_height_error_image">250dp</dimen>
-    <dimen name="min_width_error_image">250dp</dimen>
-
-    <dimen name="divider_width_opening_closing_time">30dp</dimen>
-    <dimen name="divider_width_opening_closing_day_time">10dp</dimen>
-    <dimen name="divider_height">1dp</dimen>
-    <dimen name="dashed_divider_height">6dp</dimen>
-    <dimen name="divider_circle_size">2dp</dimen>
-
-    <dimen name="dimen_14dp">14dp</dimen>
-    <dimen name="dimen_6dp">6dp</dimen>
-    <dimen name="dimen_256">256dp</dimen>
-    <dimen name="dimen_48dp">48dp</dimen>
-    <dimen name="dimen_24dp">24dp</dimen>
-    <dimen name="dimen_20dp">20dp</dimen>
-    <dimen name="dimen_32dp">32dp</dimen>
-
-
-    <dimen name="view_height_business_category">72dp</dimen>
-    <dimen name="placeholder_image_size_business_category">56dp</dimen>
-    <dimen name="placeholder_image_size_custom_business_category">56dp</dimen>
-
-    <dimen name="view_height_invite_for_myservice">72dp</dimen>
-    <dimen name="placeholder_image_size_invite_for_myservice">48dp</dimen>
-
-    <dimen name="view_height_settings_business_details">80dp</dimen>
-    <dimen name="placeholder_image_size_settings_business_details">48dp</dimen>
-
-    <dimen name="view_height_settings_option">62dp</dimen>
-    <dimen name="view_height_store_settings_option">70dp</dimen>
-    <dimen name="image_size_edit_business_details_logo">80dp</dimen>
-    <dimen name="margin_top_in_edit_business_details_btw_input_field_and_logo">32dp</dimen>
-
-    <dimen name="view_height_help_and_support_options">122dp</dimen>
-    <dimen name="placeholder_image_size_help_and_support_option">48dp</dimen>
-    <dimen name="view_height_faq_section_type">80dp</dimen>
-    <dimen name="view_height_tutorial_vertical">80dp</dimen>
-    <dimen name="view_height_tutorial_horizontal">200dp</dimen>
-    <dimen name="view_width_tutorial_horizontal">350dp</dimen>
-    <dimen name="placeholder_image_height_video_tutorial_vertical">56dp</dimen>
-    <dimen name="placeholder_image_width_video_tutorial_vertical">72dp</dimen>
-
     <dimen name="elevation_ultra_small">0.1dp</dimen>
     <dimen name="elevation_extra_small">0.25dp</dimen>
     <dimen name="elevation_small">0.5dp</dimen>
@@ -104,124 +42,6 @@
     <dimen name="elevation_medium">2dp</dimen>
     <dimen name="elevation_large">4dp</dimen>
 
-    <dimen name="default_switch_track_height">18dp</dimen>
-    <dimen name="default_switch_track_small_height">14dp</dimen>
-    <dimen name="default_switch_thumb_size">24dp</dimen>
-    <dimen name="default_switch_thumb_small_size">18dp</dimen>
-    <dimen name="default_switch_thumb_stroke_size">6dp</dimen>
-    <dimen name="default_switch_thumb_small_stroke_size">4dp</dimen>
-    <dimen name="default_switch_thumb_extra_small_stroke_size">2dp</dimen>
-    <dimen name="default_switch_thumb_ultra_small_stroke_size">1dp</dimen>
-
-    <dimen name="switch_store_settings_track_height">14dp</dimen>
-    <dimen name="switch_store_settings_track_width">56dp</dimen>
-    <dimen name="switch_store_settings_thumb_size">14dp</dimen>
-
-    <dimen name="view_shimmer_width_half">200dp</dimen>
-    <dimen name="view_height_add_location_bottom_sheet">240dp</dimen>
-    <dimen name="margin_bottom_add_location_home_marker">256dp</dimen>
-    <dimen name="margin_bottom_home_screen">120dp</dimen>
-    <dimen name="view_size_add_location_home_marker">48dp</dimen>
-
-    <dimen name="default_progress_bar_size_small">18dp</dimen>
-    <dimen name="height_tab_indicator">3dp</dimen>
-    <dimen name="view_height_service_list_item">140dp</dimen>
-    <dimen name="view_size_service_list_item_content">72dp</dimen>
-    <dimen name="placeholder_image_size_service_list_item">62dp</dimen>
-    <dimen name="padding_bottom_catalog_service_category_list">80dp</dimen>
-
-    <dimen name="shimmer_height_single_line_text">14dp</dimen>
-    <dimen name="shimmer_width_extra_small_text">40dp</dimen>
-    <dimen name="shimmer_width_small_text">80dp</dimen>
-    <dimen name="shimmer_width_regular_text">120dp</dimen>
-    <dimen name="shimmer_width_single_character_text">20dp</dimen>
-    <dimen name="shimmer_width_medium_text">180dp</dimen>
-    <dimen name="shimmer_width_button_text">120dp</dimen>
-    <dimen name="shimmer_height_button_text">24dp</dimen>
-
-
-    <dimen name="view_height_category_list_item">140dp</dimen>
-    <dimen name="view_size_category_list_item_content">72dp</dimen>
-    <dimen name="placeholder_image_size_category_list_item">62dp</dimen>
-
-    <dimen name="placeholder_image_size_uploaded_image_service_or_category">72dp</dimen>
-    <dimen name="dash_width_regular">12dp</dimen>
-    <dimen name="dash_gap_regular">3dp</dimen>
-    <dimen name="dash_width_small">6dp</dimen>
-    <dimen name="dash_gap_small">2dp</dimen>
-    <dimen name="padding_bottom_add_service">140dp</dimen>
-    <dimen name="padding_bottom_add_categories">100dp</dimen>
-    <dimen name="padding_bottom_business_categories">70dp</dimen>
-    <dimen name="padding_bottom_bookings">80dp</dimen>
-    <dimen name="padding_add_bottom_bookings">120dp</dimen>
-    <dimen name="view_height_edit_text_service_description">96dp</dimen>
-
-    <dimen name="margin_top_text_input_side_view">9.5dp</dimen>
-    <dimen name="view_height_dialog_image_upload_options">120dp</dimen>
-    <dimen name="view_width_dialog_image_upload_options">80dp</dimen>
-    <dimen name="view_height_bookings_list_item">210dp</dimen>
-    <dimen name="image_size_bookings_no_bookings">148dp</dimen>
-
-    <dimen name="view_height_select_service">72dp</dimen>
-    <dimen name="placeholder_image_size_select_service">56dp</dimen>
-
-
-    <dimen name="view_height_customizable_calendar">240dp</dimen>
-
-    <dimen name="view_height_booking_status_section_type">80dp</dimen>
-    <dimen name="view_height_booking_status_section_type_info">56dp</dimen>
-    <dimen name="view_height_booking_service_type">48dp</dimen>
-    <dimen name="view_height_manage_cards">88dp</dimen>
-    <dimen name="image_height_map_marker_arrow">32dp</dimen>
-    <dimen name="shimmer_view_height_faq_questions">56dp</dimen>
-
-
-    <dimen name="view_height_store_settings_status">120dp</dimen>
-
-
-    <!-- dateTitleLayout -->
-    <dimen name="calendar_view_text_size_title">@dimen/text_size_medium</dimen>
-    <dimen name="calendar_view_dateTitlePaddingBottom">5dp</dimen>
-    <!-- weekLayout -->
-    <dimen name="calendar_view_weekDaysPaddingBottom">0dp</dimen>
-    <dimen name="calendar_view_text_size_week">@dimen/text_size_regular</dimen>
-    <!-- weekRowLayout -->
-    <dimen name="calendar_view_weekRowMinHeight">44dp</dimen>
-    <dimen name="calendar_view_text_size_date">@dimen/text_size_regular</dimen>
-    <dimen name="calendar_view_dayOfMonthBoxSize">44dp</dimen>
-    <dimen name="calendar_view_dayOfMonthSize">34dp</dimen>
-    <dimen name="calendar_view_dayOfMonthMinWidth">50dp</dimen>
-    <dimen name="calendar_view_dayOfMonthMinHeight">0dp</dimen>
-    <dimen name="calendar_view_dayOfMonthPaddingBottom">0dp</dimen>
-    <dimen name="calendar_view_dayOfMonthImageSize">4dp</dimen>
-    <dimen name="calendar_view_dayOfMonthImageMarginTop">32dp</dimen>
-
-    <dimen name="calendar_view_strip_height">28dp</dimen>
-
-    <dimen name="view_store_timing_weekly_minimum_height">80dp</dimen>
-    <dimen name="list_item_decoration">8dp</dimen>
-    <dimen name="view_toolbar_height_home_screen">60dp</dimen>
-    <dimen name="view_height_home_banner">104dp</dimen>
-    <dimen name="view_width_mandatory_action">156dp</dimen>
-    <dimen name="view_height_mandatory_action">112dp</dimen>
-    <dimen name="view_width_home_banner">224dp</dimen>
-
-
-    <dimen name="view_height_customer">72dp</dimen>
-    <dimen name="placeholder_image_size_customer_number_prefix">48dp</dimen>
-    <dimen name="view_height_dot_indicator">30dp</dimen>
-    <dimen name="view_width_booking_reschedule_date_slot">64dp</dimen>
-    <dimen name="view_height_booking_reschedule_date_slot">76dp</dimen>
-
-    <dimen name="margin_top_select_variant_dialog_cta">80dp</dimen>
-    <dimen name="view_min_height_booking_details_info_cards">56dp</dimen>
-    <dimen name="dummy_cta_height">100dp</dimen>
-    <dimen name="margin_bottom_booking_details_more_option">32dp</dimen>
-
-    <dimen name="view_width_store_timings_dropdown">100dp</dimen>
-    <dimen name="view_size_lottie_progress_on_add_payment">200dp</dimen>
-    <dimen name="view_size_lottie_success_on_add_payment">150dp</dimen>
-    <dimen name="margin_top_success_in_add_payment">150dp</dimen>
-
-    <dimen name="view_image_size_people_logo">80dp</dimen>
+    <dimen name="view_image_size_people_list">80dp</dimen>
+    <dimen name="view_image_size_people_info">120dp</dimen>
 </resources>

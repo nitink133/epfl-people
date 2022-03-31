@@ -1,60 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/margin_extra_small"
     android:layout_marginTop="@dimen/margin_small"
     android:layout_marginEnd="@dimen/margin_extra_small"
     android:layout_marginBottom="@dimen/margin_small"
-    android:elevation="@dimen/elevation_regular"
-    android:padding="@dimen/margin_large">
+    android:clipToPadding="true"
+    android:elevation="@dimen/elevation_regular">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ch.epfl.people.widget.CircleImageView
-            android:id="@+id/iv_image"
-            android:layout_width="@dimen/view_image_size_people_logo"
-            android:layout_height="@dimen/view_image_size_people_logo"
-            android:layout_gravity="center" />
+        android:orientation="vertical"
+        android:padding="@dimen/margin_regular">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_small"
-            android:layout_marginEnd="@dimen/zero"
+            android:orientation="horizontal">
+
+            <ch.epfl.people.widget.CircleImageView
+                android:id="@+id/iv_image"
+                android:layout_width="@dimen/view_image_size_people_list"
+                android:layout_height="@dimen/view_image_size_people_list"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/zero"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name"
+                    style="@style/MediumText.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_small_text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_email"
+                    style="@style/RegularText.Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_extra_small"
+                    android:text="@string/dummy_small_text"
+                    android:textColor="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_contact_number"
+                    style="@style/RegularText.Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_extra_small"
+                    android:text="@string/dummy_small_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_regular"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_regular"
             android:orientation="vertical">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_name"
-                style="@style/MediumText.Medium"
+            <LinearLayout
+                android:id="@+id/view_position"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/dummy_small_text" />
+                android:orientation="horizontal">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_email"
-                style="@style/RegularText.Regular"
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/RegularText.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_position_with_colon"
+                    android:textColor="@color/hint_text_color" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_position"
+                    style="@style/RegularText.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:text="@string/lbl_office_with_colon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_office"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_extra_small"
-                android:text="@string/dummy_small_text"
-                android:textColor="@color/colorPrimary" />
+                android:orientation="horizontal">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_contact_number"
-                style="@style/RegularText.Regular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_extra_small"
-                android:text="@string/dummy_small_text" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/RegularText.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_office_with_colon"
+                    android:textColor="@color/hint_text_color" />
 
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_office"
+                    style="@style/RegularText.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:text="@string/lbl_office_with_colon" />
+
+            </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
 
-
-</LinearLayout>
+</androidx.cardview.widget.CardView>

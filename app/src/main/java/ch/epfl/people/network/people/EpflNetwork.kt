@@ -11,7 +11,6 @@ import ch.epfl.people.parser.PeopleDataParser
 import ch.epfl.people.utils.functional.LogUtils
 import co.allcommerce.myservice.di.IoDispatcher
 import co.allcommerce.myservice.di.MainDispatcher
-import com.google.gson.Gson
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.android.scopes.ViewModelScoped
 import kotlinx.coroutines.CoroutineDispatcher
@@ -49,6 +48,35 @@ class EpflNetwork @Inject constructor(
 
                 if (peoplesList.isNullOrEmpty()) Response.IsEmpty
                 else Response.Success(peoplesList)
+            }catch (e:Exception){
+                Response.Error(Error(message = e.message))
+            }
+
+        }
+    }
+
+    suspend fun getPeopleInfo(id:String): Response<People> {
+        if (!networkHelper.isNetworkAvailable) {
+            return withContext(mainDispatcher) {
+                delay(100)
+                Response.Error(
+                    error = Error(
+                        code = ApiConstants.ErrorCode.NO_INTERNET_ERROR,
+                        message = context.getString(R.string.err_no_internet_network)
+                    )
+                )
+            }
+        }
+
+        return withContext(ioDispatcher) {
+            try {
+                val peopleInfo = PeopleDataParser.parseJsoupDocumentToPeoplesInfo(
+                    Jsoup.connect("https://people.epfl.ch/${id}").get()
+                )
+
+                LogUtils.data("Nitin", peopleInfo)
+                if (peopleInfo == null) Response.IsEmpty
+                else Response.Success(peopleInfo)
             }catch (e:Exception){
                 Response.Error(Error(message = e.message))
             }

@@ -33,11 +33,21 @@ class PeoplesListAdapter(
             tvEmail.setUnderLineText(item.email)
             tvEmail.makeVisible(!item.email.isNullOrEmpty())
 
-            tvContactNumber.setUnderLineText(item.contact)
-            tvContactNumber.makeVisible(!item.contact.isNullOrEmpty())
+            tvContactNumber.setUnderLineText(item.contactNumber)
+            tvContactNumber.makeVisible(!item.contactNumber.isNullOrEmpty())
 
-            ivImage.load(item.image)
-            ivImage.makeVisible(!item.image.isNullOrEmpty())
+            ivImage.load(item.imageUrl)
+            ivImage.makeVisible(!item.imageUrl.isNullOrEmpty())
+
+            tvOffice.text = item.office
+            tvOffice.makeVisible(!item.office.isNullOrEmpty())
+
+            tvPosition.text = item.position
+            tvPosition.makeVisible(!item.position.isNullOrEmpty())
+
+            root.setOnClickListener {
+                selectionCallback?.invoke(viewHolder.adapterPosition)
+            }
         }
 
     }
