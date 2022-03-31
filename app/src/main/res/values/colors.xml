@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#0B2B99</color>
+    <color name="colorSecondary">#2150F5</color>
+
+
+    <color name="primary_text_color">#121212</color>
+    <color name="hint_text_color">@color/grey_600</color>
+    <color name="extra_hint_text_color">#c4c4c4</color>
+    <color name="secondaryTextColor">#80000000</color>
+    <color name="colorError">#F44336</color>
+    <color name="colorWarning">#FFCC00</color>
+    <color name="light_blue_5per">#0A0B2B99</color>
+    <color name="light_blue_10per">#1A0B2B99</color>
+    <color name="light_blue_15per">#260B2B99</color>
+    <color name="light_blue_50per">#800B2B99</color>
+    <color name="color_yellow">#F1B31C</color>
+    <color name="disabled_background">#D2D2D2</color>
+    <color name="disabled_text_color">#979797</color>
+    <color name="buttonBackground">@color/colorPrimary</color>
+    <color name="stroke_edittext">#c4c4c4</color>
+    <color name="hint_color_text_input_layout">@color/grey_600</color>
+    <color name="color_green">#14DE65</color>
+    <color name="divider_background">#C4C4C4</color>
+    <color name="divider_light_background">#E5E5E5</color>
+    <color name="background_grey">#FBFBFB</color>
+    <color name="background_grey_dark">#F1F1F1</color>
+    <color name="color_whatsapp">#128C7E</color>
+    <color name="image_placeholder_background">#C4C4C4</color>
+    <color name="hint_image">#C4C4C4</color>
+    <color name="hint_light_image">#E5E5E5</color>
+    <color name="hint_dark_image">#757575</color>
+    <color name="text_color_green">#0F9E03</color>
+    <color name="location_marker_green">#0F9E03</color>
+    <color name="bottom_nav_unselected">#D2D2D2</color>
+    <color name="bottom_nav_selected">@color/colorPrimary</color>
+    <color name="shimmer_background">#E5E5E5</color>
+    <color name="disable_edittext">#D2D2D2</color>
+    <color name="disable_edittext_dark">#757575</color>
+    <color name="disable_dark_button">#757575</color>
 </resources>

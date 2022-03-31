@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@+id/nav_people_list">
+
+    <fragment
+        android:id="@+id/nav_people_list"
+        android:name="ch.epfl.people.ui.fragment.PeopleListFragment"
+        android:label="@string/title_people_list"
+        tools:layout="@layout/fragment_people_list">
+        <action
+            android:id="@+id/move_to_booking_details"
+            app:destination="@id/nav_people_info"
+            app:enterAnim="@anim/enter_right"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left"
+            app:popExitAnim="@anim/exit_right" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_people_info"
+        android:name="ch.epfl.people.ui.fragment.PeopleInfoFragment"
+        android:label="@string/title_personal_info"
+        tools:layout="@layout/fragment_people_info">
+
+        <argument
+            android:name="id"
+            app:argType="string" />
+
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Epfl</string>
+    <string name="app_name">EPFL</string>
+    <string name="msg_please_press_again_to_exit">Please click BACK again to exit.</string>
+    <string name="err_no_internet_network">No Internet Connection</string>
+
+    <string name="title_people_list">People List</string>
+    <string name="title_personal_info">Personal Info</string>
 </resources>

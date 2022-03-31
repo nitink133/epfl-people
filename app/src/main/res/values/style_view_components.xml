@@ -1,0 +1,185 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    Text views-->
+    <style name="ToolbarTitleTextAppearance" parent="MediumText.Large">
+        <item name="android:lineSpacingMultiplier">1.33</item>
+    </style>
+
+    <style name="LightText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="fontFamily">@font/light_heebo</item>
+        <item name="android:fontFamily">@font/light_heebo</item>
+    </style>
+
+    <style name="LightText.Small" parent="LightText">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="LightText.Regular" parent="LightText">
+        <item name="android:textSize">@dimen/text_size_regular</item>
+    </style>
+
+    <style name="LightText.Medium" parent="LightText">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="LightText.MediumLarge" parent="LightText">
+        <item name="android:textSize">@dimen/margin_medium_large</item>
+    </style>
+
+    <style name="RegularText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="fontFamily">@font/regular_heebo</item>
+        <item name="android:fontFamily">@font/regular_heebo</item>
+    </style>
+
+    <style name="RegularText.Small" parent="RegularText">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="RegularText.Regular" parent="RegularText">
+        <item name="android:textSize">@dimen/text_size_regular</item>
+    </style>
+
+    <style name="RegularText.Medium" parent="RegularText">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="RegularText.MediumLarge" parent="RegularText">
+        <item name="android:textSize">@dimen/text_size_medium_large</item>
+    </style>
+
+    <style name="RegularText.Large" parent="RegularText">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="RegularText.ExtraLarge" parent="RegularText">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="HiddenText" parent="RegularText">
+        <item name="android:textSize">@dimen/zero</item>
+    </style>
+
+
+    <style name="MediumText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="fontFamily">@font/medium_heebo</item>
+        <item name="android:fontFamily">@font/medium_heebo</item>
+    </style>
+
+    <style name="MediumText.Small" parent="MediumText">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="MediumText.Regular" parent="MediumText">
+        <item name="android:textSize">@dimen/text_size_regular</item>
+    </style>
+
+    <style name="MediumText.Medium" parent="MediumText">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="MediumText.MediumLarge" parent="MediumText">
+        <item name="android:textSize">@dimen/text_size_medium_large</item>
+    </style>
+
+    <style name="MediumText.Large" parent="MediumText">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="MediumText.ExtraLarge" parent="MediumText">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="BoldText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="fontFamily">@font/bold_heebo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/bold_heebo</item>
+    </style>
+
+
+    <style name="BoldText.Small" parent="BoldText">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="BoldText.Regular" parent="BoldText">
+        <item name="android:textSize">@dimen/text_size_regular</item>
+    </style>
+
+    <style name="BoldText.Medium" parent="BoldText">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="BoldText.Large" parent="BoldText">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+
+    <style name="BoldText.MediumLarge" parent="BoldText">
+        <item name="android:textSize">@dimen/text_size_medium_large</item>
+    </style>
+
+    <style name="BoldText.ExtraLarge" parent="BoldText">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="hintTextColor">@color/primary_text_color</item>
+        <item name="android:textColorHint">@color/primary_text_color</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="fontFamily">@font/light_heebo</item>
+        <item name="android:fontFamily">@font/light_heebo</item>
+    </style>
+
+    <!--    Progress bar-->
+    <style name="ProgressBar" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorSecondary</item>
+    </style>
+
+    <!--    Button-->
+    <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PrimaryButton" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minHeight">@dimen/min_button_height</item>
+        <item name="android:paddingLeft">@dimen/margin_small</item>
+        <item name="android:paddingRight">@dimen/margin_small</item>
+        <item name="android:paddingTop">@dimen/margin_small</item>
+        <item name="android:paddingBottom">@dimen/margin_small</item>
+        <item name="elevation">@dimen/zero</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">@dimen/zero</item>
+        <item name="fontFamily">@font/regular_heebo</item>
+        <item name="font">@font/regular_heebo</item>
+        <item name="android:fontFamily">@font/regular_heebo</item>
+        <item name="android:font">@font/regular_heebo</item>
+        <item name="cornerRadius">@dimen/radius_regular</item>
+    </style>
+
+    <style name="PrimaryButton.Medium" parent="PrimaryButton">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="PrimaryButton.Regular" parent="PrimaryButton">
+        <item name="android:textSize">@dimen/text_size_regular</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+
+    <style name="PrimaryProgressBar" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+</resources>
